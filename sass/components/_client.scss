@@ -1,0 +1,35 @@
+.client-list {
+    @extend %align-items;
+    justify-content: center;
+
+}
+.client-list__item{
+    & + & {
+        margin-left: var(--typical-gap);
+    }
+}
+
+.client-list__link {
+    width: 170px;
+    height: 92px;
+
+    @extend %align-items;
+    justify-content: center;
+
+    border: 1px solid var(--primary-fill-color);
+    border-radius: 4px;
+
+    background-color: transparent;
+    fill: var(--primary-fill-color);
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-primary-text-color);
+        fill: var(--accent-primary-text-color);
+    }
+
+}
+

@@ -1,0 +1,14 @@
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: calc(-1* var(--typical-gap));
+    margin-left: calc(-1 * var(--typical-gap));
+}
+
+.team-list__item {
+    flex-basis: calc(100% / 4 - var(--typical-gap));
+
+    margin-top: var(--typical-gap);
+    margin-left: var(--typical-gap);
+}
