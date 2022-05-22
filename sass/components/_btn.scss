@@ -8,12 +8,9 @@
     cursor: pointer;
 
     font-family: inherit;
+    
     @include font(700, 16px, 1.88, 0.06em);
-    /* font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em; */
-
+   
     color: var(--primary-white-color);
     background-color: var(--accent-primary-text-color);
 
@@ -40,10 +37,7 @@
     font-family: inherit;
 
     @include font(500, 16px, 1.63);
-    /* font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    letter-spacing: 0.03em; */
+    
     text-align: center;
 
     cursor: pointer;
@@ -61,6 +55,21 @@
             0px 1px 2px rgba(0, 0, 0, 0.08),
             0px 2px 2px rgba(0, 0, 0, 0.12);
     }
+}
+
+.open-btn {
+   display: block;
+   margin-left: auto;
+   border: none;
+   background-color: transparent;
+
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.close-mob-btn {
+    @extend .open-btn;
 }
 
 .close-btn {

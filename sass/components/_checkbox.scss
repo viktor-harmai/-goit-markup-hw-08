@@ -1,9 +1,14 @@
 .checkbox__label {
     @extend %align-items;
-    justify-content: center;
+    
     cursor: pointer;
 
-    line-height: 1.71;
+    @include font (null,$fs: 12px);
+    
+    @media screen and (min-width:1200px) {
+        @include font (null,14px,1.71);
+    }
+   
     
     .checkbox__wrap {
         margin-right: 8px;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="Изучение основ HTML5 для новичков" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,7 +29,7 @@
             Web<span class="logo__studio">Studio</span>
           </a>
 
-          <ul class="menu-list list">
+          <ul class="menu-list">
             <li class="menu-list__item">
               <a href="./index.html" class="menu-list__link">Студия</a>
             </li>
@@ -43,7 +44,7 @@
           </ul>
         </nav>
 
-        <ul class="contact list">
+        <ul class="contact">
           <li class="contact__item">
             <a href="mailto:info@devstudio.com" class="contact__link">
               <svg class="contact__icon" width="16" height="12">
@@ -64,6 +65,76 @@
             </a>
           </li>
         </ul>
+
+        <button type="button" class="open-btn">
+          <svg class="open-btn__icon" width="40" height="40">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile-menu -->
+
+      <div class="menu-mob is-hidden">
+        <div class="container">
+          <div class="menu-mob-top">
+            <button type="button" class="close-mob-btn">
+              <svg class="close-mob-btn__icon" width="40" height="40">
+                <use href="./images/icons.svg#close_mobile"></use>
+              </svg>
+            </button>
+
+            <ul class="menu-mob-list">
+              <li class="menu-mob-list__item">
+                <a href="./index.html" class="menu-mob-list__link"> Студия </a>
+              </li>
+
+              <li class="menu-mob-list__item">
+                <a href="./portfolio.html" class="menu-mob-list__link menu-mob-list__link--current"
+                  >Портфолио</a
+                >
+              </li>
+
+              <li class="menu-mob-list__item">
+                <a href="" class="menu-mob-list__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-mob-bottom">
+            <ul class="mob-contact">
+              <li class="mob-contact__item">
+                <a href="tel:+380961111111" class="mob-contact__link mob-contact__link--font">
+                  +38 096 111 11 11
+                </a>
+              </li>
+
+              <li class="mob-contact__item">
+                <a href="mailto:info@devstudio.com" class="mob-contact__link">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mob-soc-list">
+              <li class="mob-soc-list__item">
+                <a href="" target="_blank" class="mob-soc-list__link">Instagram</a>
+              </li>
+
+              <li class="mob-soc-list__item">
+                <a href="" target="_blank" class="mob-soc-list__link">Twitter</a>
+              </li>
+
+              <li class="mob-soc-list__item">
+                <a href="" target="_blank" class="mob-soc-list__link">Facebook</a>
+              </li>
+
+              <li class="mob-soc-list__item">
+                <a href="" target="_blank" class="mob-soc-list__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -89,6 +160,10 @@
                   <div class="card-work-thumb">
                     <img
                       class="work-image"
+                      srcset="
+                        ./images/project/project-1.jpg    1x,
+                        ./images/project/project-1-2x.jpg 2x
+                      "
                       src="./images/project/project-1.jpg"
                       alt="Экран ноутбука"
                       width="370"
@@ -100,7 +175,7 @@
                     </p>
                   </div>
 
-                  <div class="card-work-content">
+                  <div class="card-work-content padind-bottom">
                     <h2 class="work-title">Технокряк</h2>
                     <p class="work-text">Веб-сайт</p>
                   </div>
@@ -114,6 +189,10 @@
                   <div class="card-work-thumb">
                     <img
                       class="work-image"
+                      srcset="
+                        ./images/project/project-2.jpg    1x,
+                        ./images/project/project-2-2x.jpg 2x
+                      "
                       src="./images/project/project-2.jpg"
                       alt="Два баскетболиста"
                       width="370"
@@ -141,6 +220,10 @@
                   <div class="card-work-thumb">
                     <img
                       class="work-image"
+                      srcset="
+                        ./images/project/project-3.jpg    1x,
+                        ./images/project/project-3-2x.jpg 2x
+                      "
                       src="./images/project/project-3.jpg"
                       alt="Логотип ресторана"
                       width="370"
@@ -166,6 +249,10 @@
                   <div class="card-work-thumb">
                     <img
                       class="work-image"
+                      srcset="
+                        ./images/project/project-4.jpg    1x,
+                        ./images/project/project-4-2x.jpg 2x
+                      "
                       src="./images/project/project-4.jpg"
                       alt="Наушники"
                       width="370"
@@ -191,6 +278,10 @@
                   <div class="card-work-thumb">
                     <img
                       class="work-image"
+                      srcset="
+                        ./images/project/project-5.jpg    1x,
+                        ./images/project/project-5-2x.jpg 2x
+                      "
                       src="./images/project/project-5.jpg"
                       alt="Две коробки"
                       width="370"
@@ -216,6 +307,10 @@
                   <div class="card-work-thumb">
                     <img
                       class="work-image"
+                      srcset="
+                        ./images/project/project-6.jpg    1x,
+                        ./images/project/project-6-2x.jpg 2x
+                      "
                       src="./images/project/project-6.jpg"
                       alt="Монитор"
                       width="370"
@@ -241,6 +336,10 @@
                   <div class="card-work-thumb">
                     <img
                       class="work-image"
+                      srcset="
+                        ./images/project/project-7.jpg    1x,
+                        ./images/project/project-7-2x.jpg 2x
+                      "
                       src="./images/project/project-7.jpg"
                       alt="Разворот журнала"
                       width="370"
@@ -266,6 +365,10 @@
                   <div class="card-work-thumb">
                     <img
                       class="work-image"
+                      srcset="
+                        ./images/project/project-8.jpg    1x,
+                        ./images/project/project-8-2x.jpg 2x
+                      "
                       src="./images/project/project-8.jpg"
                       alt="Лейба"
                       width="370"
@@ -291,6 +394,10 @@
                   <div class="card-work-thumb">
                     <img
                       class="work-image"
+                      srcset="
+                        ./images/project/project-9.jpg    1x,
+                        ./images/project/project-9-2x.jpg 2x
+                      "
                       src="./images/project/project-9.jpg"
                       alt="Ноутбук"
                       width="370"
@@ -429,5 +536,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

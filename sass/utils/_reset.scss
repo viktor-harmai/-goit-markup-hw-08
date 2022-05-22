@@ -17,14 +17,12 @@ ul,
 ol {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 img {
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-.list {
-    list-style: none;
+    width: 100%;
 }

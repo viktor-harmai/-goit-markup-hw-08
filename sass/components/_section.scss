@@ -1,11 +1,21 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
+
 .section--no-padding-top {
-    padding-top: 0;
-    padding-bottom: 94px;
+   display: none;
+
+    @media screen and (min-width:1200px) {        
+        display: block;
+        padding-top: 0;
+        padding-bottom: 94px;
+    }
 }
 
 .section--primary-bc {
@@ -14,14 +24,14 @@
 
 .section__title {
     margin-top: 0;
-    margin-bottom: 50px;
-
+    margin-bottom: var(--typical-gap);
+    @include font ($fs: 28px);
     color: var(--title-text-color);
-
-    @include font ($fs: 36px);
-    /* font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em; */
     text-align: center;
+    
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+        @include font ($fs: 36px);
+    }    
 }
+

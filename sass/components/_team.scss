@@ -1,14 +1,24 @@
 .team-list {
-    display: flex;
-    flex-wrap: wrap;
-
-    margin-top: calc(-1* var(--typical-gap));
-    margin-left: calc(-1 * var(--typical-gap));
+    margin-bottom: calc(-1* var(--typical-gap));
+    
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--typical-gap));
+    }
 }
 
 .team-list__item {
-    flex-basis: calc(100% / 4 - var(--typical-gap));
+    margin-bottom: var(--typical-gap);
+    
+    @media screen and (min-width:768px) {
+        width: 354px;
+        flex-basis: calc(100% / 2 - var(--typical-gap));
+        margin-left: var(--typical-gap);
+    }
 
-    margin-top: var(--typical-gap);
-    margin-left: var(--typical-gap);
+    @media screen and (min-width:1200px) {
+        width: 270px;
+        flex-basis: calc(100% / 4 - var(--typical-gap));
+    }
 }
