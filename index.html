@@ -116,19 +116,27 @@
 
             <ul class="mob-soc-list">
               <li class="mob-soc-list__item">
-                <a href="" target="_blank" class="mob-soc-list__link">Instagram</a>
+                <a href="https://instagram.com/" target="_blank" class="mob-soc-list__link"
+                  >Instagram</a
+                >
               </li>
 
               <li class="mob-soc-list__item">
-                <a href="" target="_blank" class="mob-soc-list__link">Twitter</a>
+                <a href="https://twitter.com/" target="_blank" class="mob-soc-list__link"
+                  >Twitter</a
+                >
               </li>
 
               <li class="mob-soc-list__item">
-                <a href="" target="_blank" class="mob-soc-list__link">Facebook</a>
+                <a href="https://facebook.com/" target="_blank" class="mob-soc-list__link"
+                  >Facebook</a
+                >
               </li>
 
               <li class="mob-soc-list__item">
-                <a href="" target="_blank" class="mob-soc-list__link">LinkedIn</a>
+                <a href="https://linkedin.com/" target="_blank" class="mob-soc-list__link"
+                  >LinkedIn</a
+                >
               </li>
             </ul>
           </div>
@@ -221,32 +229,38 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="about-list">
             <li class="about-list__item">
-              <img
-                srcset="./images/box/box-1.jpg 1x, ./images/box/box-1-2x.jpg 2x"
-                src="./images/box/box-1.jpg"
-                alt="Програмист пишет код"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box/desk-box-1.jpg 1x, ./images/box/desk-box-1-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/box/desk-box-1.jpg" alt="Програмист пишет код" />
+              </picture>
+
               <p class="about-list__text">Десктопные приложения</p>
             </li>
 
             <li class="about-list__item">
-              <img
-                srcset="./images/box/box-2.jpg 1x, ./images/box/box-2-2x.jpg 2x"
-                src="./images/box/box-2.jpg"
-                alt="Три телефона на мониторе ноутбука"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box/desk-box-2.jpg 1x, ./images/box/desk-box-2-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/box/desk-box-2.jpg" alt="Три телефона на мониторе ноутбука" />
+              </picture>
+
               <p class="about-list__text">Мобильные приложения</p>
             </li>
 
             <li class="about-list__item">
-              <img
-                srcset="./images/box/box-3.jpg 1x, ./images/box/box-3-2x.jpg 2x"
-                src="./images/box/box-3.jpg"
-                alt="Дизайнер выбирает цвет на планшете"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box/desk-box-3.jpg 1x, ./images/box/desk-box-3-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/box/desk-box-3.jpg" alt="Дизайнер выбирает цвет на планшете" />
+              </picture>
+
               <p class="about-list__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -262,13 +276,34 @@
           <ul class="team-list">
             <li class="team-list__item">
               <article class="card-team">
-                <img
-                  class="card-team__image"
-                  srcset="./images/team/team-card-1.jpg 1x, ./images/team/team-card-1-2x.jpg 2x"
-                  src="./images/team/team-card-1.jpg"
-                  alt="Участник команды №1"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/desk-team-card-1.jpg    1x,
+                      ./images/team/desk-team-card-1-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tab-team-card-1.jpg    1x,
+                      ./images/team/tab-team-card-1-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mob-team-card-1.jpg    1x,
+                      ./images/team/mob-team-card-1-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="card-team__image"
+                    src="./images/team/mob-team-card-1.jpg"
+                    alt="Участник команды №1"
+                  />
+                </picture>
 
                 <div class="card-team__content">
                   <h3 class="card-team__title">Игорь Демьяненко</h3>
@@ -290,7 +325,7 @@
 
                     <li class="social__item">
                       <a
-                        href="https://instagram.com/"
+                        href="https://twitter.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         class="social__link"
@@ -303,7 +338,7 @@
 
                     <li class="social__item">
                       <a
-                        href="https://instagram.com/"
+                        href="https://facebook.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         class="social__link"
@@ -316,7 +351,7 @@
 
                     <li class="social__item">
                       <a
-                        href="https://instagram.com/"
+                        href="https://linkedin.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         class="social__link"
@@ -333,13 +368,34 @@
 
             <li class="team-list__item">
               <article class="card-team">
-                <img
-                  class="card-team__image"
-                  srcset="./images/team/team-card-2.jpg 1x, ./images/team/team-card-2-2x.jpg 2x"
-                  src="./images/team/team-card-2.jpg"
-                  alt="Участник команды №2"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/desk-team-card-2.jpg    1x,
+                      ./images/team/desk-team-card-2-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tab-team-card-2.jpg    1x,
+                      ./images/team/tab-team-card-2-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mob-team-card-2.jpg    1x,
+                      ./images/team/mob-team-card-2-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="card-team__image"
+                    src="./images/team/mob-team-card-2.jpg"
+                    alt="Участник команды №2"
+                  />
+                </picture>
 
                 <div class="card-team__content">
                   <h3 class="card-team__title">Ольга Репина</h3>
@@ -361,7 +417,7 @@
 
                     <li class="social__item">
                       <a
-                        href="https://instagram.com/"
+                        href="https://twitter.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         class="social__link"
@@ -374,7 +430,7 @@
 
                     <li class="social__item">
                       <a
-                        href="https://instagram.com/"
+                        href="https://facebook.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         class="social__link"
@@ -387,7 +443,7 @@
 
                     <li class="social__item">
                       <a
-                        href="https://instagram.com/"
+                        href="https://linkedin.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         class="social__link"
@@ -404,13 +460,34 @@
 
             <li class="team-list__item">
               <article class="card-team">
-                <img
-                  class="card-team__image"
-                  srcset="./images/team/team-card-3.jpg 1x, ./images/team/team-card-3-2x.jpg 2x"
-                  src="./images/team/team-card-3.jpg"
-                  alt="Участник команды №3"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/desk-team-card-3.jpg    1x,
+                      ./images/team/desk-team-card-3-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tab-team-card-3.jpg    1x,
+                      ./images/team/tab-team-card-3-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mob-team-card-3.jpg    1x,
+                      ./images/team/mob-team-card-3-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="card-team__image"
+                    src="./images/team/mob-team-card-3.jpg"
+                    alt="Участник команды №3"
+                  />
+                </picture>
 
                 <div class="card-team__content">
                   <h3 class="card-team__title">Николай Тарасов</h3>
@@ -432,7 +509,7 @@
 
                     <li class="social__item">
                       <a
-                        href="https://instagram.com/"
+                        href="https://twitter.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         class="social__link"
@@ -445,7 +522,7 @@
 
                     <li class="social__item">
                       <a
-                        href="https://instagram.com/"
+                        href="https://facebook.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         class="social__link"
@@ -458,7 +535,7 @@
 
                     <li class="social__item">
                       <a
-                        href="https://instagram.com/"
+                        href="https://linkedin.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         class="social__link"
@@ -475,13 +552,34 @@
 
             <li class="team-list__item">
               <article class="card-team">
-                <img
-                  class="card-team__image"
-                  srcset="./images/team/team-card-4.jpg 1x, ./images/team/team-card-4-2x.jpg 2x"
-                  src="./images/team/team-card-4.jpg"
-                  alt="Участник команды №4"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team/desk-team-card-4.jpg    1x,
+                      ./images/team/desk-team-card-4-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/tab-team-card-4.jpg    1x,
+                      ./images/team/tab-team-card-4-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/team/mob-team-card-4.jpg    1x,
+                      ./images/team/mob-team-card-4-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="card-team__image"
+                    src="./images/team/mob-team-card-4.jpg"
+                    alt="Участник команды №4"
+                  />
+                </picture>
 
                 <div class="card-team__content">
                   <h3 class="card-team__title">Михаил Ермаков</h3>
@@ -503,7 +601,7 @@
 
                     <li class="social__item">
                       <a
-                        href="https://instagram.com/"
+                        href="https://twitter.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         class="social__link"
@@ -516,7 +614,7 @@
 
                     <li class="social__item">
                       <a
-                        href="https://instagram.com/"
+                        href="https://facebook.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         class="social__link"
@@ -529,7 +627,7 @@
 
                     <li class="social__item">
                       <a
-                        href="https://instagram.com/"
+                        href="https://linkedin.com/"
                         target="_blank"
                         rel="noreferrer noopener"
                         class="social__link"
@@ -664,7 +762,7 @@
 
               <li class="social__item">
                 <a
-                  href="https://instagram.com/"
+                  href="https://twitter.com/"
                   target="_blank"
                   rel="noreferrer noopener"
                   class="social__link social__link--background"
@@ -677,7 +775,7 @@
 
               <li class="social__item">
                 <a
-                  href="https://instagram.com/"
+                  href="https://facebook.com/"
                   target="_blank"
                   rel="noreferrer noopener"
                   class="social__link social__link--background"
@@ -690,7 +788,7 @@
 
               <li class="social__item">
                 <a
-                  href="https://instagram.com/"
+                  href="https://linkedin.com/"
                   target="_blank"
                   rel="noreferrer noopener"
                   class="social__link social__link--background"

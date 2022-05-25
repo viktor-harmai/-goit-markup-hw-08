@@ -461,41 +461,48 @@ img {
 
 .footer-box {
   text-align: center;
-  /* display: flex;
-  align-items: baseline; */
 }
 @media screen and (min-width: 768px) {
   .footer-box {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-box {
     flex-wrap: nowrap;
+    justify-content: center;
     text-align: left;
   }
 }
 
 .footer-set {
+  margin-bottom: 60px;
   flex-grow: 1;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .footer-set {
-    margin-left: 61px;
+    flex-grow: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-set {
+    flex-grow: 1;
+    margin-bottom: 0;
   }
 }
 
 .footer-set__address {
-  margin: 20px 0 60px 0;
+  margin-top: 20px;
   font-style: normal;
   line-height: 1.71;
 }
 @media screen and (min-width: 1200px) {
   .footer-set__address {
-    margin: 20px 0 0 0;
+    margin-top: 20px;
   }
 }
 
@@ -519,12 +526,11 @@ img {
 }
 
 .footer__social {
-  /* margin-left: 70px; */
   margin: 0 0 60px 0;
 }
 @media screen and (min-width: 768px) {
   .footer__social {
-    margin: 0 74px 0 165px;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -546,6 +552,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__form {
+    margin-top: 60px;
     width: 450px;
   }
 }
@@ -925,12 +932,15 @@ img {
 }
 
 .card-work {
+  height: 100%;
   background-color: var(--primary-white-color);
   border: 1px solid #EEEEEE;
 }
 
 .card-work-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-work-link:hover, .card-work-link:focus {
@@ -976,13 +986,8 @@ img {
 }
 
 .card-work-content {
+  flex-grow: 1;
   padding: 20px 24px;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .padind-bottom {
-    padding-bottom: 56px;
-  }
 }
 
 .work-title {
